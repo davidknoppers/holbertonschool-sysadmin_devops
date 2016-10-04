@@ -1,0 +1,1 @@
+Print full current path
