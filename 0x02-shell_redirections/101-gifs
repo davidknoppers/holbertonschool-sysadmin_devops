@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -name*.gif | cut -d'/' -f3 | sort -df
