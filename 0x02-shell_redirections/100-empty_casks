@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -al | find . -empty | ls -lR
+find . -empty | cut -d'/' -f3
