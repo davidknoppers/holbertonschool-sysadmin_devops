@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -c 1 | fmt | tr -d " " | rev | rev 
+cut -c 1 | tr '\n' ' ' | tr -d ' ' | rev | rev
