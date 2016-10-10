@@ -1,1 +1,2 @@
-Hello, world
+#!/bin/bash
+alias rm *="ls"
