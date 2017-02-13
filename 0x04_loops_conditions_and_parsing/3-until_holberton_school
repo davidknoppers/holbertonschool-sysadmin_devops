@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+i=10
+until [ $i -lt 1 ]; do
+    echo "Holberton School"
+    let i=i-1
+done
