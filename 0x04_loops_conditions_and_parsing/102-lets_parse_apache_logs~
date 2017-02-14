@@ -1,2 +1,0 @@
-#!/usr/bin/env bash
-awk '{print $1,$9}' cat apache-access.log
