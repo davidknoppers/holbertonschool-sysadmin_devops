@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#prints a whole lotta time
 hours=0
 while [ $hours -lt 12 ]; do
     echo Hour: $hours

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+#simple use of IFS
 while IFS=: read -r f1 f3 f6
 do
     echo "$f1:$f3:$f6"

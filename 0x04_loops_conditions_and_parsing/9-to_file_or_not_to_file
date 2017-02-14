@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#demonstrating use of basic file checks
 if [ -e "holbertonschool" ]
 then
     echo "holbertonschool file exists"
