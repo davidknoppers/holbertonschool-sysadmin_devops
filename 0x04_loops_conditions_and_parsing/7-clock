@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #prints a whole lotta time
 hours=0
-while [ $hours -lt 12 ]; do
+while [ $hours -lt 13 ]; do
     echo Hour: $hours
     let hours=hours+1
     minutes=0
