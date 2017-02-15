@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#while loop with nested ifs
+i=0
+while [ $i -lt 10 ]; do
+    echo "Holberton School"
+    let i=i+1
+    if [ $i == "9" ]
+	then echo "Hi"
+    fi
+done

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#using bash scripting to sort IPs by frequency
+awk '{print $1}' apache-access.log | sort |uniq -c |sort -n | tail | sort
