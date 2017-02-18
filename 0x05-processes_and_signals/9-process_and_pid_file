@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#another supposedly invincible infinite loop
+
+func() {
+    rm /var/run/holbertonscript.pid
+    exit
+}
+
+trap "echo I hate the kill command;func" SIGTERM
+trap "echo Y U no love me?!;func" SIGINT
+
+echo $$ >> /var/run/holbertonscript.pid
+i=0
+while [ $i -lt 1 ]; do
+      echo To infinity and beyond;
+      sleep 2;
+done
