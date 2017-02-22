@@ -1,3 +1,3 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #ping with 1 being the server name passed to the function
 ping "$1"
