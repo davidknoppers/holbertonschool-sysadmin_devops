@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-#enter the proper directory to ensure no warnings, then start server
+# enter the proper directory to ensure no warnings, then start server
 cd /etc/apache2 && service apache2 start
