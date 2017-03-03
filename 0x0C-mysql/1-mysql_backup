@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# backs up all databases into a dump called backup.sql and tarballs it
+mysqldump -u root -p"$1" --all-databases > backup.sql
+tar -czf "$(date +'%d-%m-%Y').tar.gz" backup.sql
