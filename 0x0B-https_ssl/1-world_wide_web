@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# identifies subdomains and where they point to
+sub_info ()
+{
+    var=( $(dig "$2.$1" | awk '/ANSWER SECTION:/ {getline; print}') )
+    echo The subdomain "$2" is a "${var[3]}" record and points to "${var[4]}"
+}
+
+if [ $# -lt 2  ]; then
+    sub_info "$1" "$2"
+else
+    for i in "www" "lb-01" "web-01" "web-02"; do
+    sub_info "$1" "$i"
+    done
+fi
