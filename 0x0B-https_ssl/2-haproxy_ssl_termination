@@ -46,8 +46,8 @@ server 92-web-01 52.90.159.84:80 check
 server 92-web-02 54.242.30.104:80 check
 frontend www-http
    bind *:80
-   reqadd X-Forwarded-Proto:\ http
    redirect scheme https code 301 if !{ ssl_fc }
+   reqadd X-Forwarded-Proto:\ http
    default_backend www-backend
 frontend www-https
    bind *:443 ssl crt /etc/haproxy/certs/www.david-knoppers.tech.pem
