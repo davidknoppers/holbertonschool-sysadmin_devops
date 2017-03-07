@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# looks for inet address lines in ifconfig and then cuts out just the IP
+ifconfig | grep 'inet addr:' | cut -d':' -f2 | cut -d' ' -f1
