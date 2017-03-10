@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-#! sets up nginx as a default user
-pkill -9 apache2
-wget https://transfer.sh/xVYks/david.config -O /etc/nginx/nginx.conf
-sudo chown -R nginx /var/log/nginx /etc/nginx /usr/share/nginx
-sudo chmod 755 /etc/nginx/nginx.conf
-su nginx -c nginx
