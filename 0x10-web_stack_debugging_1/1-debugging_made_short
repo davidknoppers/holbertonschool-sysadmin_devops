@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# change 8080 to 80
+# change 8080 to 80 without sudo
 sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
 service nginx start
