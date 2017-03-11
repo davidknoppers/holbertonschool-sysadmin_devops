@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# short and sweet server fix
-sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default /etc/nginx/sites-available/default
+# change 8080 to 80
+sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
 service nginx start
