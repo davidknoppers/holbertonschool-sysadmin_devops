@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# short and sweet server fix
-sudo service nginx stop
-sudo sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
+# change 8080 to 80 and restarts nginx
+sudo sed -i 's/8080/80/' /etc/nginx/sites-enabled/default
 sudo service nginx restart

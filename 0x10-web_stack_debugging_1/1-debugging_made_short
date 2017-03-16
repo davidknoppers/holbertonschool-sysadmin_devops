@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# change 8080 to 80 without sudo
+# change 8080 to 80 and restarts nginx
 sudo sed -i 's/8080/80/' /etc/nginx/sites-enabled/default
 sudo service nginx restart
