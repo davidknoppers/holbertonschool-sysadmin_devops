@@ -10,7 +10,7 @@ At approximately 12:00 AM PDT on March 24th, 2017, our Apache-powered Wordpress 
 - 7:00AM PDT: Sysadmin discovers outage on web server, debugging begins
 - 7:30AM PDT: Sysadmin confirms that all basic web requests return a HTTP 500 error
 - 7:30AM to 8:00PM PDT: Sysadmin runs through several ineffective debugs, including multiple uses of strace and curl
-- 8:00PM to 9:00PM: PDT Sysadmin discovers that all PHP and Apache error logs have been disabled. Sysadmin gradually campus up error log reporting until virtually all error messages are enabled, then uses grep to parse through error log output
+- 8:00PM to 9:00PM PDT: Sysadmin discovers that all PHP and Apache error logs have been disabled. Sysadmin gradually campus up error log reporting until virtually all error messages are enabled, then uses grep to parse through error log output
 - 9:00PM PDT: Sysadmin discovers the following in the PHP error log: open("/var/www/html/wp-includes/class-wp-locale.phpp", O_RDONLY) = -1 ENOENT (No such file or directory)
 - 9:15PM PDT: Sysadmin writes bash script using sed to fix the typo
 - 9:30PM PDT: Server is reset and normal service is restored
