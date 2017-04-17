@@ -10,7 +10,7 @@ import requests
 
 if __name__ == "__main__":
     url = "https://jsonplaceholder.typicode.com"
-    if sys.argv[1] and int(sys.argv[1]):
+    if len(sys.argv) > 1:
         user_id = sys.argv[1]
         name = requests.get("{}/users/{}".format(
             url, user_id)).json().get("name")
