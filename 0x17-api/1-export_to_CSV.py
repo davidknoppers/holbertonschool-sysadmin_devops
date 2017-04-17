@@ -4,9 +4,9 @@ Requests username and tasks from JSON Placeholder
 based on userid (which is sys.argv[1])
 and writes it to a csv
 """
-import sys
 import csv
 import requests
+import sys
 
 
 if __name__ == "__main__":

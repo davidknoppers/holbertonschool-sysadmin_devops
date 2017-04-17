@@ -3,8 +3,8 @@
 Requests data from JSON Placeholder
 and saves it to JSON as a dictionary of dictionaries
 """
-import requests
 import json
+import requests
 
 
 if __name__ == "__main__":

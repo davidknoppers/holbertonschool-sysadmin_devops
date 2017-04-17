@@ -4,9 +4,9 @@ Requests username and tasks from JSON Placeholder
 based on userid (which is sys.argv[1])
 and saves it to JSON
 """
-import sys
-import requests
 import json
+import requests
+import sys
 
 
 if __name__ == "__main__":
