@@ -24,4 +24,4 @@ if __name__ == "__main__":
             name, len(tasks_completed), len(r)))
         if len(tasks_completed) > 0:
             for task in tasks_completed:
-                print("\t{}".format(task.get("title")))
+                print("\t {}".format(task.get("title")))
