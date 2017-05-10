@@ -1,0 +1,1 @@
+Here we practice whiteboarding a walkthrough of our basic LAMP Stack infrastructure.
