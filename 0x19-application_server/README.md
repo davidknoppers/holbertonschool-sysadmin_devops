@@ -1,0 +1,1 @@
+These scripts set up Gunicorn for one of our servers for our AirBNB clone!
