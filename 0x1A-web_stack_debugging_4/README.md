@@ -1,0 +1,1 @@
+Web stack debugging exercise focused on using Puppet to reduce our failed request rate
