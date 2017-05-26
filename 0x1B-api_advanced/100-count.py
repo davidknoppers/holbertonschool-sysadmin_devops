@@ -40,8 +40,8 @@ def count_words(subreddit, word_list=[], count_dict={}, after=""):
     current_after = r.json()['data']['after']
 
     if current_after is None:
-        for key in count_dict.keys():
-            if count_dict[key] > 0:
-                print("{}: {}".format(key, count_dict[key]))
+        for count_item in sorted(count_dict.items(), key=lambda x: x[1]):
+            if int(count_item[1]) > 0:
+                print("{}: {}".format(count_item[0], count_item[1]))
         return
     return count_words(subreddit, word_list, count_dict, current_after)
