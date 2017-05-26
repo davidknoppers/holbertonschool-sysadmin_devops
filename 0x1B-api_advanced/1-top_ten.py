@@ -15,19 +15,15 @@ def top_ten(subreddit):
     We loop through the deep dictionary returned as a JSON and print the titles
     """
     url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
-    r = requests.get(url, headers={'user-agent': 'Chrome',
-                                   'allow_redirects': 'False'})
-    if r.status_code == 200:
-        children = r.json()['data']['children']
-        if children == []:
-            print("None")
-            return
-        else:
-            #counter needed because we might have more than ten results!
-            counter = 0
-            for child in children:
-                if counter < 10:
-                    print(child['data']['title'])
-                counter += 1
-    else:
+    r = requests.get(url, headers={'user-agent': 'Chrome'})
+    top_list = []
+    counter = 0
+    try:
+        for child in r.json()['data'].get('children'):
+            top_list.append(child['data'].get('title'))
+            counter += 1
+            if counter > 9:
+                break
+        print("\n".join(top for top in top_list))
+    except Exception as err:
         print("None")
