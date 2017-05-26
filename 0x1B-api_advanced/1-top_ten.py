@@ -26,5 +26,9 @@ def top_ten(subreddit=None):
     if children == []:
         print("None")
     else:
+        #counter needed because we might have more than ten results!
+        counter = 0
         for child in children:
-            print(child['data']['title'])
+            if counter < 10:
+                print(child['data']['title'])
+            counter += 1
