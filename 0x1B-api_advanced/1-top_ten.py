@@ -20,6 +20,7 @@ def top_ten(subreddit=None):
     r = requests.get(url, headers={'user-agent': 'Chrome',
                                    'allow_redirects': 'False'})
     if r.status_code != 200:
+        print ("None")
         return None
     children = r.json()['data']['children']
     if children == []:
